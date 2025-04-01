@@ -12,6 +12,7 @@ limite_saques=3
 usuarios=[]#lista vazia para serem acrescentados valores posteriormente.
 contas=[]
 agencia='0001'
+
 def menu():
     print('''
     ****************Menu****************
@@ -62,3 +63,22 @@ def saque(saque, saldo):
         print('===========Extrato===========')
         print(f'{horaatual} \nSaldo disponível:{saldo}')
         print('\n===========Extrato===========')
+
+        def sair()
+
+            print('***********Encerrando o sistema***********')
+        
+        def novo_usuario(usuario)
+        cpf=int(input('Digite seu cpf (Somente números);'))
+        usuario= filtrar_usuario (cpf,usuario)
+        if usuario:
+            print('Usuário já cadastrado a baase de dados')
+            return
+
+            nome = str('Escreva seu nome completo')
+            data_nascimento = input('Informe a data de nascimento (dd--mm--aa)
+            :')
+            #O apend adiciona o usuário ao meu banco
+            endereço = input('Informe seu indereço (Rua, numero, cep, bairro, e cidade)')
+            usuario.apend(f'nome:{nome}, data de nascimento: {data_nascimento}, endereço:{endereço}')
+            print('Cadastro realizado com sucesso')
