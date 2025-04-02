@@ -57,18 +57,18 @@ def saque(saque, saldo):
                         numero_saques+1
         return saldo
         from datetime import datetime
-        def extrato (saldo)
+def extrato (saldo)
         hora = datetime.now
         horaatual=hora.strftime('%d/%m/%y/%h:%M')
         print('===========Extrato===========')
         print(f'{horaatual} \nSaldo disponível:{saldo}')
         print('\n===========Extrato===========')
 
-        def sair()
+def sair()
 
             print('***********Encerrando o sistema***********')
         
-        def novo_usuario(usuario)
+def novo_usuario(usuario)
         cpf=int(input('Digite seu cpf (Somente números);'))
         usuario= filtrar_usuario (cpf,usuario)
         if usuario:
@@ -82,3 +82,10 @@ def saque(saque, saldo):
             endereço = input('Informe seu indereço (Rua, numero, cep, bairro, e cidade)')
             usuario.apend(f'nome:{nome}, data de nascimento: {data_nascimento}, endereço:{endereço}')
             print('Cadastro realizado com sucesso')
+
+def filtrar_usuário (cpf, usuario)
+#filtra o usuário com base em um CPF
+#A função usa uma compreenção de lista para verifica aquele que corresponde ao 
+#cpf fornecido e retorna o primeiro usuário que corresponde ao cpf filtrado. Caso não encontre nada ele retorna None (nada)
+usuario_filtrado = [usuario for usuario in if usuario ['cpf']===cpf]
+return usuario_filtrado else None
