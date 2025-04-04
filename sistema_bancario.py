@@ -89,3 +89,15 @@ def filtrar_usuário (cpf, usuario)
 #cpf fornecido e retorna o primeiro usuário que corresponde ao cpf filtrado. Caso não encontre nada ele retorna None (nada)
 usuario_filtrado = [usuario for usuario in if usuario ['cpf']===cpf]
 return usuario_filtrado else None
+
+while true:
+    op = menu()
+if op== 'd':
+    valor = float(input('Digite o valor do depósito:'))
+    saldo = deposito(valor, saldo)
+if op == 's':
+    valor = float(input('Digite o valor do saque:'))
+    saldo = saque(valor, saldo)
+            
+            
+     break 
